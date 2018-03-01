@@ -1,0 +1,3 @@
+GET    /                           fr.pernisi.controller.IndexController.index
+
+->     /tasks                    	rest.Routes

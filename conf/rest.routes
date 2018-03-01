@@ -1,0 +1,6 @@
+
+GET    /                    fr.pernisi.task.actions.CrudAction.listTask
+POST   /                    fr.pernisi.task.actions.CrudAction.createTask
+
+GET    /:id                 fr.pernisi.task.actions.CrudAction.getTask(id)
+PUT    /:id                 fr.pernisi.task.actions.CrudAction.updateTask(id)
