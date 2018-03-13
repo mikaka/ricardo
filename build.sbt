@@ -23,11 +23,7 @@ EclipseKeys.preTasks := Seq(compile in Compile, compile in Test)
 
 lazy val GatlingTest = config("gatling") extend Test
 
-lazy val root = (project in file(".")).enablePlugins(PlayJava, GatlingPlugin).configs(GatlingTest)
-  .settings(inConfig(GatlingTest)(Defaults.testSettings): _*)
-  .settings(
-    scalaSource in GatlingTest := baseDirectory.value / "/gatling/simulation"
-  )
+lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
 libraryDependencies += guice
 libraryDependencies += javaJpa
