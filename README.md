@@ -1,2 +1,0 @@
-# ricardo
-rest service example
