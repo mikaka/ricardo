@@ -23,7 +23,7 @@ EclipseKeys.preTasks := Seq(compile in Compile, compile in Test)
 
 lazy val GatlingTest = config("gatling") extend Test
 
-lazy val root = (project in file(".")).enablePlugins(PlayJava)
+lazy val root = (project in file(".")).enablePlugins(PlayJava).disablePlugins(PlayFilters)
 
 libraryDependencies += guice
 libraryDependencies += javaJpa
